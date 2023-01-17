@@ -1,11 +1,12 @@
+import { Container } from "react-bootstrap";
 import useTitle from "../customHooks/useTitle";
 
 function AboutUs() {
   useTitle("About Us | Xplorers Computer Training School");
   return (
-    <div>
+    <Container>
       <h2>AboutUs</h2>
-    </div>
+    </Container>
   );
 }
 
