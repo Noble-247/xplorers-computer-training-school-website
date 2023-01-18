@@ -6,11 +6,15 @@ import NavigationBar from "./NavigationBar";
 function RootLayout() {
   return (
     <Fragment>
-      <NavigationBar />
+      <header>
+        <NavigationBar />
+      </header>
       <main>
         <Outlet />
       </main>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </Fragment>
   );
 }
