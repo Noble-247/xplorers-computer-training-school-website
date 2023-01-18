@@ -13,6 +13,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import TrainingServices from "./pages/TrainingServices";
 import ContactUs from "./pages/ContactUs";
+import NotFound from "./pages/NotFound";
 
 // Layout Imports
 import RootLayout from "./layout/RootLayout";
@@ -25,6 +26,7 @@ function App() {
         <Route path='about-us' element={<AboutUs />} />
         <Route path='training-services' element={<TrainingServices />} />
         <Route path='contact-us' element={<ContactUs />} />
+        <Route path='*' element={<NotFound />} />
       </Route>
     )
   );
