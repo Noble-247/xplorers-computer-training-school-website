@@ -1,4 +1,4 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Container, Nav, Navbar, Image } from "react-bootstrap";
 import Logo from "../images/xplorers-logo.png";
 
@@ -40,42 +40,48 @@ function NavigationBar() {
               <i class='bi bi-clock'></i> Opening: 9:00am - 5:00pm, (Mondays -
               Fridays)
             </small>
-            <Link
-              to='/'
+            <a
+              href='/'
+              target='_blank'
+              rel='noopener noreferrer'
               onMouseEnter={(event) => mouseEnterEffectOnNavigationText(event)}
               onMouseLeave={(event) => mouseLeaveEffectOnNavigationText(event)}
             >
               <small className='ml-3 text-white'>
                 <i class='bi bi-facebook'></i>
               </small>
-            </Link>
-            <Link
-              to='/'
+            </a>
+
+            <a
+              href='/'
+              target='_blank'
               onMouseEnter={(event) => mouseEnterEffectOnNavigationText(event)}
               onMouseLeave={(event) => mouseLeaveEffectOnNavigationText(event)}
             >
               <small className='ml-3 text-white'>
                 <i class='bi bi-twitter'></i>
               </small>
-            </Link>
-            <Link
-              to='/'
+            </a>
+            <a
+              href='/'
+              target='_blank'
               onMouseEnter={(event) => mouseEnterEffectOnNavigationText(event)}
               onMouseLeave={(event) => mouseLeaveEffectOnNavigationText(event)}
             >
               <small className='ml-3 text-white'>
                 <i class='bi bi-linkedin'></i>
               </small>
-            </Link>
-            <Link
-              to='/'
+            </a>
+            <a
+              href='/'
+              target='_blank'
               onMouseEnter={(event) => mouseEnterEffectOnNavigationText(event)}
               onMouseLeave={(event) => mouseLeaveEffectOnNavigationText(event)}
             >
               <small className='ml-3 text-white'>
                 <i class='bi bi-instagram'></i>
               </small>
-            </Link>
+            </a>
           </div>
         </Container>
       </div>
