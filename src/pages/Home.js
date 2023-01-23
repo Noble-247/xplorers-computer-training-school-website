@@ -1,12 +1,16 @@
 import { Container } from "react-bootstrap";
 import useTitle from "../customHooks/useTitle";
+import Carousels from "../utilities/Carousels";
 
 function Home() {
   useTitle("Home | Xplorers Computer Training School");
   return (
-    <Container>
-      <h2>Home - Welcome to Xplorers Computer Training School</h2>
-    </Container>
+    <div>
+      <Carousels />
+      <Container>
+        <h2>Home - Welcome to Xplorers Computer Training School</h2>
+      </Container>
+    </div>
   );
 }
 
