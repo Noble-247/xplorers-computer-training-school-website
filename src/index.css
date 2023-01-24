@@ -1,0 +1,11 @@
+/* START MY CUSTOM STYLES */
+
+.footer-background-style {
+  background-image: linear-gradient(
+      rgba(25, 39, 67, 0.8),
+      rgba(25, 39, 67, 0.8)
+    ),
+    url(./images/tech_background.jpg);
+}
+
+/* END MY CUSTOM STYLES */

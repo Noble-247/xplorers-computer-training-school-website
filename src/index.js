@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+
 import App from "./App";
 
 // React-Bootstrap imports
@@ -12,7 +12,7 @@ import "./bootstrap.css";
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
 // local CSS imports
-import "./App.css";
+import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
