@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { Container, Nav, Navbar, Image } from "react-bootstrap";
-import Logo from "../images/xplorers-logo.png";
+import Logo from "../images/logos/xplorers-logo.png";
+import { Fragment } from "react";
 
 function NavigationBar() {
   function mouseEnterEffectOnNavigationText(event) {
@@ -11,7 +12,7 @@ function NavigationBar() {
   }
 
   return (
-    <div className='sticky-top'>
+    <Fragment>
       <div className='bg-primary text-white p-2 d-none d-md-block'>
         <Container className='d-flex justify-content-between'>
           <div>
@@ -28,7 +29,7 @@ function NavigationBar() {
               onMouseEnter={(event) => mouseEnterEffectOnNavigationText(event)}
               onMouseLeave={(event) => mouseLeaveEffectOnNavigationText(event)}
             >
-              <i class='bi bi-telephone'></i> Call +2348039356492
+              <i className='bi bi-telephone'></i> Call +2348039356492
             </small>
           </div>
           <div>
@@ -37,8 +38,8 @@ function NavigationBar() {
               onMouseEnter={(event) => mouseEnterEffectOnNavigationText(event)}
               onMouseLeave={(event) => mouseLeaveEffectOnNavigationText(event)}
             >
-              <i class='bi bi-clock'></i> Opening: 9:00am - 5:00pm, (Mondays -
-              Fridays)
+              <i className='bi bi-clock'></i> Opening: 9:00am - 5:00pm, (Mondays
+              - Fridays)
             </small>
             <a
               href='/'
@@ -48,7 +49,7 @@ function NavigationBar() {
               onMouseLeave={(event) => mouseLeaveEffectOnNavigationText(event)}
             >
               <small className='ml-3 text-white'>
-                <i class='bi bi-facebook'></i>
+                <i className='bi bi-facebook'></i>
               </small>
             </a>
 
@@ -59,7 +60,7 @@ function NavigationBar() {
               onMouseLeave={(event) => mouseLeaveEffectOnNavigationText(event)}
             >
               <small className='ml-3 text-white'>
-                <i class='bi bi-twitter'></i>
+                <i className='bi bi-twitter'></i>
               </small>
             </a>
             <a
@@ -69,7 +70,7 @@ function NavigationBar() {
               onMouseLeave={(event) => mouseLeaveEffectOnNavigationText(event)}
             >
               <small className='ml-3 text-white'>
-                <i class='bi bi-linkedin'></i>
+                <i className='bi bi-linkedin'></i>
               </small>
             </a>
             <a
@@ -79,54 +80,64 @@ function NavigationBar() {
               onMouseLeave={(event) => mouseLeaveEffectOnNavigationText(event)}
             >
               <small className='ml-3 text-white'>
-                <i class='bi bi-instagram'></i>
+                <i className='bi bi-instagram'></i>
               </small>
             </a>
           </div>
         </Container>
       </div>
-      <Navbar expand='lg' bg='white' variant='light' className='container'>
-        <Navbar.Brand>
-          <div className='d-flex align-items-center'>
-            <div>
-              <Image src={Logo} fluid />
+      <Navbar
+        expand='lg'
+        bg='white'
+        variant='light'
+        className='sticky-top shadow'
+      >
+        <Container>
+          <Navbar.Brand>
+            <div className='d-flex align-items-center'>
+              <div>
+                <Image src={Logo} fluid />
+              </div>
+              <small style={{ lineHeight: "1" }}>
+                <span
+                  className='text-secondary font-weight-bolder h5'
+                  style={{ letterSpacing: "4.5px" }}
+                >
+                  XPLORERS
+                </span>
+                <br />{" "}
+                <span className='d-block' style={{ fontSize: "13px" }}>
+                  Training School
+                </span>
+              </small>
             </div>
-            <small style={{ lineHeight: "1" }}>
-              <span
-                className='text-secondary font-weight-bolder h5'
-                style={{ letterSpacing: "4.5px" }}
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className='ml-auto'>
+              <NavLink to='/' end className='nav-link mr-4 font-weight-bold'>
+                Home
+              </NavLink>
+              <NavLink to='about-us' className='nav-link mr-4 font-weight-bold'>
+                About
+              </NavLink>
+              <NavLink
+                to='training-services'
+                className='nav-link mr-4 font-weight-bold'
               >
-                XPLORERS
-              </span>
-              <br />{" "}
-              <span className='d-block' style={{ fontSize: "13px" }}>
-                Training School
-              </span>
-            </small>
-          </div>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='ml-auto'>
-            <NavLink to='/' end className='nav-link mr-4 font-weight-bold'>
-              Home
-            </NavLink>
-            <NavLink to='about-us' className='nav-link mr-4 font-weight-bold'>
-              About
-            </NavLink>
-            <NavLink
-              to='training-services'
-              className='nav-link mr-4 font-weight-bold'
-            >
-              Training Services
-            </NavLink>
-            <NavLink to='contact-us' className='nav-link mr-4 font-weight-bold'>
-              Contact Us
-            </NavLink>
-          </Nav>
-        </Navbar.Collapse>
+                Training Services
+              </NavLink>
+              <NavLink
+                to='contact-us'
+                className='nav-link mr-4 font-weight-bold'
+              >
+                Contact Us
+              </NavLink>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
       </Navbar>
-    </div>
+    </Fragment>
   );
 }
 
