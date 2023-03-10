@@ -1,9 +1,9 @@
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import firstCarouselImage from "../images/carousel-image-1.jpg";
-import secondCarouselImage from "../images/carousel-image-2.jpg";
-import thirdCarouselImage from "../images/carousel-image-3.jpg";
-import fourthCarouselImage from "../images/carousel-image-4.jpg";
+import firstCarouselImage from "../images/carousel-img/carousel-image-1.jpg";
+import secondCarouselImage from "../images/carousel-img/carousel-image-2.jpg";
+import thirdCarouselImage from "../images/carousel-img/carousel-image-3.jpg";
+import fourthCarouselImage from "../images/carousel-img/carousel-image-4.jpg";
 
 function Carousels() {
   return (
