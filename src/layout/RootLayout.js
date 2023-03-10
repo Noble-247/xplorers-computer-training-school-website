@@ -6,9 +6,7 @@ import NavigationBar from "./NavigationBar";
 function RootLayout() {
   return (
     <Fragment>
-      <header>
-        <NavigationBar />
-      </header>
+      <NavigationBar />
       <main>
         <Outlet />
       </main>
