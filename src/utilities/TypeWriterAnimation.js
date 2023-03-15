@@ -12,8 +12,8 @@ function TypeWriterAnimation() {
   }, []);
 
   return (
-    <div className='root'>
-      <h1 className='title'>
+    <div className='mt-4'>
+      <h2>
         <Typewriter
           start={startTypeWriter}
           loop
@@ -46,7 +46,7 @@ function TypeWriterAnimation() {
           maxDeleteSpeed={100}
           timeBeforeDelete={1300}
         />
-      </h1>
+      </h2>
     </div>
   );
 }
