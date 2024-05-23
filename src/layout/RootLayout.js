@@ -26,7 +26,7 @@ function RootLayout() {
         {isUnderConstruction && (
           <div className='site-under-maintenance'>
             <Container>
-              <CountDownTimer targetDate='2023-12-31T00:00:00' />
+              <CountDownTimer targetDate='2024-12-31T00:00:00' />
               <TypeWriterAnimation />
               <small>
                 Since 2003, Xplorers Computer Training School has grown to
