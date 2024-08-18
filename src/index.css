@@ -1,91 +1,68 @@
-/* START MY CUSTOM STYLES */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 
-.footer-background-style {
-  background-image: linear-gradient(
-      rgba(25, 39, 67, 0.8),
-      rgba(25, 39, 67, 0.8)
-    ),
-    url(./images/tech_background.jpg);
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.carousel-caption-style {
-  padding: 15px;
-  border-radius: 5px;
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  /* margin-top: -1000px; */
-  margin-top: -300px;
-  background-image: linear-gradient(
-    rgba(25, 39, 67, 0.8),
-    rgba(25, 39, 67, 0.8),
-    rgba(25, 39, 67, 0.8)
-  );
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  animation-name: carousel-caption-animation;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
-@keyframes carousel-caption-animation {
-  0% {
-    margin-top: -900px;
-  }
-
-  50% {
-    margin-top: -800px;
-  }
-
-  100% {
-    margin-top: -300px;
-  }
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
 }
 
-.site-under-maintenance {
-  background-image: url(./images/svg/Polygon-Luminary.svg);
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
-.typewriter {
-  overflow: hidden; /* Ensures the text is not visible until the animation starts */
-  border-right: 0.15em solid orange; /* Creates the blinking cursor */
-  white-space: nowrap; /* Ensures the text is not broken into multiple lines */
-  margin: 0 auto; /* Centers the text in the container */
-  letter-spacing: 0.15em; /* Adds space between letters for a more realistic effect */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; /* Combines the typing and blinking animations */
-}
-
-@keyframes typing {
-  from {
-    width: 0;
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
   }
-  to {
-    width: 100%;
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
   }
 }
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
-
-/* END MY CUSTOM STYLES */
