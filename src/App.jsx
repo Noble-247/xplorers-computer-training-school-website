@@ -12,6 +12,7 @@ import Container from "react-bootstrap/Container";
 
 // LAYOUT
 import RootLayout from "./layout/RootLayout";
+import Home from "./pages/Home";
 
 function App() {
   const Router = createBrowserRouter(
@@ -19,7 +20,12 @@ function App() {
       <Route
         path="/"
         element={<RootLayout />}
-      ></Route>
+      >
+        <Route
+          index
+          element={<Home />}
+        />
+      </Route>
     )
   );
   return (
