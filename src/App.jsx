@@ -8,11 +8,13 @@ import {
 //BOOTSTRAP
 import Container from "react-bootstrap/Container";
 
-//PAGE IMPORTS
-
 // LAYOUT
 import RootLayout from "./layout/RootLayout";
+
+//PAGE IMPORTS
 import Home from "./pages/Home";
+// import AboutUs from "./pages/AboutUs";
+import NotFound from "./pages/NotFound";
 
 function App() {
   const Router = createBrowserRouter(
@@ -25,6 +27,14 @@ function App() {
           index
           element={<Home />}
         />
+        <Route
+          path="*"
+          element={<NotFound />}
+        />
+        {/*  <Route
+          path="about-us"
+          element={<AboutUs />}
+        /> */}
       </Route>
     )
   );
