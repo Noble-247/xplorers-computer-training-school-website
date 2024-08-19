@@ -15,6 +15,7 @@ import RootLayout from "./layout/RootLayout";
 import Home from "./pages/Home";
 // import AboutUs from "./pages/AboutUs";
 import NotFound from "./pages/NotFound";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   const Router = createBrowserRouter(
@@ -31,10 +32,10 @@ function App() {
           path="*"
           element={<NotFound />}
         />
-        {/*  <Route
+        <Route
           path="about-us"
           element={<AboutUs />}
-        /> */}
+        />
       </Route>
     )
   );
