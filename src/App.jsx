@@ -16,6 +16,7 @@ import Home from "./pages/Home";
 // import AboutUs from "./pages/AboutUs";
 import NotFound from "./pages/NotFound";
 import AboutUs from "./pages/AboutUs";
+import TrainingServices from "./pages/TrainingServices";
 
 function App() {
   const Router = createBrowserRouter(
@@ -35,6 +36,10 @@ function App() {
         <Route
           path="about-us"
           element={<AboutUs />}
+        />
+        <Route
+          path="contact-us"
+          element={<TrainingServices />}
         />
       </Route>
     )
